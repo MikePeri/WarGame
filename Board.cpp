@@ -13,8 +13,8 @@ namespace WarGame
         
         if(location.first<0 || location.second<0 || location.first>=board.size() || location.second>=board.size())
             throw std::invalid_argument("Invalid argument.");
-        if(board[location.first][location.second]!=nullptr)
-             throw std::invalid_argument("Invalid argument.");
+        //if(board[location.first][location.second]!=nullptr)
+           //  throw std::invalid_argument("Invalid argument.");
         return board[location.first][location.second];
      }
      Soldier* Board::operator[](std::pair<int,int> location) const
